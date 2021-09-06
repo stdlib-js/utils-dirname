@@ -95,6 +95,12 @@ for ( i = 0; i < files.length; i++ ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/extname`][@stdlib/utils/extname]: return a filename extension.
+
 </section>
 
 <!-- /.related -->
@@ -157,6 +163,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/utils-dirname/main/LICENSE
 
 [dirname]: https://en.wikipedia.org/wiki/Dirname
+
+<!-- <related-links> -->
+
+[@stdlib/utils/extname]: https://github.com/stdlib-js/utils-extname
+
+<!-- </related-links> -->
 
 </section>
 
