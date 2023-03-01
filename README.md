@@ -107,7 +107,7 @@ for ( i = 0; i < files.length; i++ ) {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/utils/extname`][@stdlib/utils/extname]</span><span class="delimiter">: </span><span class="description">return a filename extension.</span>
+-   <span class="package-name">[`@stdlib/utils-extname`][@stdlib/utils/extname]</span><span class="delimiter">: </span><span class="description">return a filename extension.</span>
 
 </section>
 
