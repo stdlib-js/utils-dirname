@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import dirname from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-dirname@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-dirname/tags). For example,
+
+```javascript
 import dirname from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-dirname@v0.1.0-esm/index.mjs';
 ```
 
@@ -73,7 +78,7 @@ var dir = dirname( './foo/bar/index.js' );
 var statSync = require( 'fs' ).statSync;
 var path = require( 'path' );
 var readDir = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-read-dir' ).sync;
-import dirname from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-dirname@v0.1.0-esm/index.mjs';
+import dirname from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-dirname@esm/index.mjs';
 
 var files;
 var fpath;
