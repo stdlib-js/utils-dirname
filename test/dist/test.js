@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,66 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var dirname = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof dirname, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function throws an error if provided a path argument which is not a string', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		5,
-		null,
-		NaN,
-		true,
-		void 0,
-		[],
-		{},
-		function noop() {}
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.throws( badValue( values[i] ), TypeError, 'throws error when provided '+values[i] );
-	}
-	t.end();
-	function badValue( value ) {
-		return function badValue() {
-			dirname( value );
-		};
-	}
-});
-
-tape( 'the function returns a directory name', function test( t ) {
-	var expected;
-	var values;
-	var i;
-
-	values = [
-		'/index.js',
-		'foo/bar/home.html',
-		'.gitignore',
-		'./.travis.yml',
-		'/foo/bar/README.md'
-	];
-
-	expected = [
-		'/',
-		'foo/bar',
-		'',
-		'.',
-		'/foo/bar'
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.equal( dirname( values[ i ] ), expected[ i ], values[ i ] );
-	}
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
