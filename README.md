@@ -78,6 +78,8 @@ var dir = dirname( './foo/bar/index.js' );
 
 ## Examples
 
+<!-- eslint-disable node/no-sync -->
+
 <!-- eslint no-undef: "error" -->
 
 ```javascript
