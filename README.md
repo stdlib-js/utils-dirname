@@ -35,38 +35,32 @@ limitations under the License.
 
 > Return a [directory name][dirname].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-dirname
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-dirname = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-dirname@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var dirname = require( 'path/to/vendor/umd/utils-dirname/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-dirname@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.dirname;
-})();
-</script>
+var dirname = require( '@stdlib/utils-dirname' );
 ```
 
 #### dirname( path )
@@ -90,12 +84,7 @@ var dir = dirname( './foo/bar/index.js' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript">
-(function () {
+```javascript
 var statSync = require( 'fs' ).statSync;
 var path = require( 'path' );
 var readDir = require( '@stdlib/fs-read-dir' ).sync;
@@ -119,11 +108,6 @@ for ( i = 0; i < files.length; i++ ) {
         console.log( '%s --> %s', fpath, dir );
     }
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -207,8 +191,11 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
 [deno-url]: https://github.com/stdlib-js/utils-dirname/tree/deno
+[deno-readme]: https://github.com/stdlib-js/utils-dirname/blob/deno/README.md
 [umd-url]: https://github.com/stdlib-js/utils-dirname/tree/umd
+[umd-readme]: https://github.com/stdlib-js/utils-dirname/blob/umd/README.md
 [esm-url]: https://github.com/stdlib-js/utils-dirname/tree/esm
+[esm-readme]: https://github.com/stdlib-js/utils-dirname/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/utils-dirname/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/utils-dirname/main/LICENSE
@@ -217,7 +204,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/extname]: https://github.com/stdlib-js/utils-extname/tree/umd
+[@stdlib/utils/extname]: https://github.com/stdlib-js/utils-extname
 
 <!-- </related-links> -->
 
