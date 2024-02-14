@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import dirname from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-dirname@deno/mod.js';
+import dirname from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-dirname@v0.2.0-deno/mod.js';
 ```
 
 #### dirname( path )
@@ -70,7 +70,7 @@ var dir = dirname( './foo/bar/index.js' );
 var statSync = require( 'fs' ).statSync;
 var path = require( 'path' );
 var readDir = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-read-dir' ).sync;
-import dirname from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-dirname@deno/mod.js';
+import dirname from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-dirname@v0.2.0-deno/mod.js';
 
 var files;
 var fpath;
